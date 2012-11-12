@@ -8,10 +8,10 @@
 #  * quantum_admin_username
 #  * quantum_admin_auth_url
 class nova::network::quantum (
-  #$fixed_range,
+  $fixed_range,
   $quantum_admin_password,
-  #$use_dhcp                  = 'True',
-  #$public_interface          = undef,
+  $use_dhcp                  = 'True',
+  $public_interface          = undef,
   $quantum_connection_host   = localhost,
   $quantum_auth_strategy     = 'keystone',
   $quantum_url               = 'http://127.0.0.1:9696',
